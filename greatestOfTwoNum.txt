@@ -1,0 +1,15 @@
+fun main() {
+    print("Enter the first integer: ")
+    val number1 = readLine()!!
+    var n1 = number1.toInt()
+    
+    print("Enter the first integer: ")
+    val number2 = readLine()!!
+    var n2 = number2.toInt()
+    
+    if(n2>n1)
+    println("$n2 is greater than $n1")
+    else
+    println("$n1 is greater than $n2")
+   
+}

@@ -1,0 +1,24 @@
+fun main() {
+    print("Enter a positive integer: ")
+    val number = readLine()?.toInt()
+
+    if (number == null || number <= 1) {
+        println("Invalid input. Please enter a positive integer greater than 1.")
+        return
+    }
+
+    var isPrime = true
+
+    for (i in 2 until number) {
+        if (number % i == 0) {
+            isPrime = false
+            break
+        }
+    }
+
+    if (isPrime) {
+        println("$number is a prime number.")
+    } else {
+        println("$number is not a prime number.")
+    }
+}
